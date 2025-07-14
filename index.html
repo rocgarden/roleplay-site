@@ -4,196 +4,46 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RolePlay App – Privacy & Terms</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            margin: 0;
-            background-color: #fdfdfd;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #6f42c1;
-            padding: 1rem 2rem;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 900px;
-            margin: 0 auto;
-            color: white;
-        }
-
-        nav h1 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        h1,
-        h2 {
-            color: #6f42c1;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin-top: 2rem;
-        }
-
-        p {
-            margin: 1rem 0;
-        }
-
-        a {
-            color: #6f42c1;
-            text-decoration: none;
-        }
-
-        hr {
-            margin: 3rem 0 2rem;
-            border: none;
-            border-top: 1px solid #ddd;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        input,
-        textarea {
-            padding: 0.75rem;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 1rem;
-            width: 100%;
-        }
-
-        button {
-            background-color: #6f42c1;
-            color: white;
-            border: none;
-            padding: 0.75rem;
-            border-radius: 6px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #5a32a1;
-        }
-
-        footer {
-            margin-top: 4rem;
-            padding: 1rem;
-            font-size: 0.85rem;
-            color: #999;
-            text-align: center;
-        }
-    </style>
+    <title>Role Play Creator App</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-
     <header>
-        <nav>
-            <h1>RolePlay</h1>
-            <ul>
-                <li><a href="#privacy">Privacy</a></li>
-                <li><a href="#terms">Terms</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Role Play Creator</h1>
+            <p class="tagline">Your creativity-powered improv game app</p>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/roleplay-site/">Home</a></li>
+                    <li><a href="/roleplay-site/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="/roleplay-site/terms/">Terms</a></li>
+                    <li><a href="/roleplay-site/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
+    <main>
+        <section class="intro">
+            <h2>Welcome to the Role Play Creator App</h2>
+            <p>This app helps you assign characters, generate scenes, and spark imagination with your friends, family,
+                or
+                students.</p>
+            <p>Use the navigation above to read our Privacy Policy, Terms, or reach out.</p>
+        </section>
+    </main>
 
-        <h1 id="privacy">Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> June 30, 2025</p>
-
-        <p>Your privacy is important to us. This Privacy Policy explains how we handle your data in the RolePlay mobile
-            app.</p>
-
-        <h2>Information We Collect</h2>
-        <p>We do not collect or store any personal information. All gameplay and content are handled locally on your
-            device.</p>
-
-        <h2>Third-Party Services</h2>
-        <p>Currently, the app does not use third-party services (e.g., ads, analytics). If that changes, this policy
-            will be updated accordingly.</p>
-
-        <h2>Children’s Privacy</h2>
-        <p>RolePlay is designed for general audiences. It does not knowingly collect data from children under 13.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>We may update this policy. Changes will be reflected on this page with a revised effective date.</p>
-
-        <hr />
-
-        <h1 id="terms">Terms of Service</h1>
-
-        <p>By using the RolePlay mobile app, you agree to the following terms and conditions:</p>
-
-        <h2>1. Use of the App</h2>
-        <p>This app is provided for entertainment purposes only. You agree not to use it for any illegal or unauthorized
-            activities.</p>
-
-        <h2>2. Intellectual Property</h2>
-        <p>All content, graphics, and assets in RolePlay are the property of the app creators and may not be reused or
-            modified without permission.</p>
-
-        <h2>3. Disclaimer</h2>
-        <p>The app is provided “as is” without warranties of any kind. We are not responsible for any damages or data
-            loss that may occur from using the app.</p>
-
-        <h2>4. Updates and Changes</h2>
-        <p>We reserve the right to update the app and these terms at any time. Continued use of the app means you accept
-            the latest terms.</p>
-
-        <hr />
-
-        <h1 id="contact">Contact</h1>
-        <p>If you have any questions or feedback, feel free to contact us below:</p>
-
-        <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-
-        <footer>
-            &copy; 2025 RolePlay App – All rights reserved.
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; 2025 RolePlay App – All rights reserved.</p>
+        <p class="footer-disclaimer">
+            This site may use cookies and services like Google Analytics and AdMob. See our
+            <a href="/roleplay-site/privacy-policy/">Privacy Policy</a> for details.
+        </p>
+    </footer>
 </body>
 
 </html>
+
 
 
